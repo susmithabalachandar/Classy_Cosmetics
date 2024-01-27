@@ -24,7 +24,7 @@ html::-webkit-scrollbar
 }
 html::-webkit-scrollbar-thumb
 {
-    background: #bfc1c2;
+    background: gainsboro;
 }
 section
 {
@@ -78,63 +78,15 @@ body{
     background-color: #04AA6D;
     color: white;
   }
-  .home
+  .category .boxcontainer
   {
-    position: relative;
-    padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
-  .home .slide
-  {
-    padding: 5rem;
-    display: flex;
-    min-height: 60vh;
-
-  }
-  .home .slide .content{
-    margin: 10px;
-    text-align: left;
-    padding-top: 10rem;
-  }
-.home .slide .content span{
-    color: black;
-    display: block;
-    font-size: 4rem;
-}
-.home .slide .content span:hover{
-    color:#fff;
-}
-.home .slide .content h3{
-    font-size: 2rem;
-    color: black ;
-
-}
-.button
-{
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    color:#00008b;
-    border: 2px solid #00008b;
-    font-size: 1.7rem ;
-    box-shadow: 0 0.5rem 1rem #00008b;
-    cursor: pointer;
-}
-.button:hover
-{
-    letter-spacing: 0.1rem;
-    color:white;
-    background-color: green;
-}
-.category .boxcontainer
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 5rem;
-}
 .category .boxcontainer .box
 {
     text-align: center;
-    font-size: large;
+    font-size: 30px;
 }
 .category .boxcontainer .box:hover h3
 {
@@ -143,48 +95,9 @@ body{
 }
 .category .boxcontainer .box img
 {
-    height: 15rem;
+    height: 25rem;
     margin-bottom: 1rem;
 }
-.about
-{
-    display: flex;
-    align: center;
-    gap: 2rem;
-}
-.about .image
-{
-    padding-bottom: 5rem;
-    padding-right: 5rem;
-}
-.about .content .box
-{
-    padding: 3rem;
-    background: #f5f5f5 ;
-}
-.about .content .box h2
-{
-    font-size: 3rem;
-    font-weight: bolder;
-    color:#860111;
-}
-.about .content .box h3{
-    font-size: 2rem;
-    color: #e4007c;
-}
-.about .content .box h3:hover
-{
-    letter-spacing: 0.5rem;
-    color:#04AA6D;
-}
-.about .content .box p
-{
-    font-size: 1.5rem;
-    line-height: 2.5;
-    color: black;
-}
-
-
 .shop
 {
     color: white;
@@ -265,24 +178,22 @@ body{
         color: yellow;
     }
 }
-.view{
-    display: block;
-    margin: auto;
-    width:100px;
-    height: 40px;
-    border: 2px solid #00008b ;
-    margin-top:15px;
-    color:#00008b;
-    font-size:1.3rem;
+.button
+{
+    display: inline-block;
+    margin-top: 1.5rem;
     padding: 1rem;
-    margin-bottom: 15px;
-
-    
+    color:#00008b;
+    border: 2px solid #00008b;
+    font-size: 1.7rem ;
+    box-shadow: 0 0.5rem 1rem #00008b;
+    cursor: pointer;
 }
-
-.view:hover{
+.button:hover
+{
+    letter-spacing: 0.1rem;
     color:white;
-    background-color:#00008b;
+    background-color: green;
 }
 .footer{
     background: gainsboro;
