@@ -339,3 +339,17 @@ body{
     color: white;
     background-color: #e4007c;
 }
+.footer .credit
+{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-top: 0.2rem solid black;
+    color: black;
+}
+span
+{
+    color:#e4007c;
+}

@@ -33,9 +33,16 @@ section
 .heading
 {
     text-align: center;
-    color: palevioletred;
+    color: black;
     margin-bottom: 3rem;
     font-size: 4rem;
+}
+.heading:hover
+{
+    letter-spacing: .1rem;
+}
+span{
+    color:#e4007c;
 }
 .header
 {
@@ -249,4 +256,14 @@ body{
 .footer .box-container .box .share a:hover{
     color: white;
     background-color: #e4007c;
+}
+.footer .credit
+{
+    text-align: center;
+    padding: 1rem;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    border-top: 0.2rem solid black;
+    color: black;
 }
