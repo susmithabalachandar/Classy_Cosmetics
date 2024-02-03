@@ -58,7 +58,7 @@ section
 {
     display:inline-table;
     text-align: center;
-    color: #291fe2 ;
+    color: #291fe2; 
     position: relative;
     font-size: 4rem;
     font-weight: 600;
@@ -115,37 +115,7 @@ body{
     background-color: #04AA6D;
     color: white;
   }
-  .home
-  {
-    position: relative;
-    padding: 0;
-  }
-  .home .slide
-  {
-    padding: 5rem;
-    display: flex;
-    min-height: 60vh;
-
-  }
-  .home .slide .content{
-    margin: 10px;
-    text-align: left;
-    padding-top: 10rem;
-  }
-.home .slide .content span{
-    color: black;
-    display: block;
-    font-size: 4rem;
-}
-.home .slide .content span:hover{
-    color:#fff;
-}
-.home .slide .content h3{
-    font-size: 2rem;
-    color: black ;
-
-}
-.button
+  .button
 {
     display: inline-block;
     margin-top: 1.5rem;
@@ -308,7 +278,7 @@ body{
     padding-top: 0.5rem 0;
     i{
         font-size: 1.5rem;
-        color: #ffdf00 ;
+        color: yellow;
     }
 }
 .view{
@@ -353,7 +323,7 @@ body{
 .footer .box-container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
     color: #e4007c;
 }
@@ -475,37 +445,4 @@ span1
 .si:hover
 {
     letter-spacing: 0.1rem;
-}
-
-.cat
-{
-    display:inline-table;
-    text-align: center;
-    color: black ;
-    position: relative;
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    
-}
-.cat:hover
-{
-    letter-spacing: 0.4rem;
-    color:hsl(158, 95%, 34%);
-}
-.cat:before
-{
-    content: " ";
-    position: absolute;
-    bottom: -2px;
-    height: 6px;
-    width: 100%;
-    background: #860111;
-    border-radius: 50px;
-    transform: scaleX(0);
-    transition: width 0.2s linear;
-}
-.cat:hover:before
-{
-    transform: scaleX(1);
 }

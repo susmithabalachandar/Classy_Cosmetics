@@ -24,7 +24,7 @@ html::-webkit-scrollbar
 }
 html::-webkit-scrollbar-thumb
 {
-    background: gainsboro;
+    background: #bfc1c2;
 }
 section
 {
@@ -33,16 +33,9 @@ section
 .heading
 {
     text-align: center;
-    color: black;
+    color: palevioletred;
     margin-bottom: 3rem;
     font-size: 4rem;
-}
-.heading:hover
-{
-    letter-spacing: .1rem;
-}
-span{
-    color:#e4007c;
 }
 .header
 {
@@ -57,6 +50,43 @@ span{
     justify-content: space-between;
     padding: 1.5rem 9%;
 }
+.parent-container {
+    text-align: center;
+}
+
+.h2
+{
+    display:inline-table;
+    text-align: center;
+    color: #291fe2; ;
+    position: relative;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    
+}
+.h2:hover
+{
+    letter-spacing: 0.4rem;
+    color:#04AA6D;
+}
+.h2:before
+{
+    content: " ";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 100%;
+    background: #860111;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: width 0.2s linear;
+}
+.h2:hover:before
+{
+    transform: scaleX(1);
+}
+
 body{
     padding-top: 60px;
 }
@@ -85,108 +115,7 @@ body{
     background-color: #04AA6D;
     color: white;
   }
-  .category .boxcontainer
-  {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  }
-.category .boxcontainer .box
-{
-    text-align: center;
-    font-size: 30px;
-}
-.category .boxcontainer .box:hover h3
-{
-    color: #2e8b57;
-    font-size: bold;
-}
-.category .boxcontainer .box img
-{
-    height: 25rem;
-    margin-bottom: 1rem;
-}
-.shop
-{
-    color: white;
-}
-.shop .box-container
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
-    gap: 2rem;
-
-}
-.shop .box-container .box
-{
-    text-align: center;
-    background: white;
-    border: 0.2rem solid black;
-}
-.shop .box-container .box:hover .image img
-{
-    transform: scale(1.1);
-
-
-}
-.shop .box-container .box:hover .image .icons
-{
-    transform: translateX(0rem);
-}
-.shop .box-container .box .image
-{
-    position: relative;
-    overflow: hidden;
-}
-.shop .box-container .box .image img
-{
-    height: 15rem;
-    padding-top: 2rem;
-}
-.shop .box-container .box .image .icons
-{
-    position: absolute;
-    top: 0rem;
-    left: 1rem;
-    transform: translateX(-10rem);
-}
-.shop .box-container .box .image .icons a{
-    display: block;
-    height: 5rem;
-    width: 5rem;
-    line-height: 1rem;
-    font-size: 1.9rem;
-    color: black;
-    border-radius: 0.2rem solid black;
-    margin-top: 1rem;
-}
-.shop .box-container .box .image .icons a:hover{
-    color: green;
-    
-}
-.shop .box-container .box .content
-{
-    padding: 2rem;
-}
-.shop .box-container .box .content h3
-{
-    color: black;
-    font-size: 2rem;
-}
-.shop .box-container .box .content .price
-{
-    font-size: 2rem;
-    font-weight: bolder;
-    color: black;
-}
-.shop .box-container .box .content .stars
-{
-    padding-top: 0.5rem 0;
-    i{
-        font-size: 1.5rem;
-        color: yellow;
-    }
-}
-.button
+  .button
 {
     display: inline-block;
     margin-top: 1.5rem;
@@ -203,6 +132,44 @@ body{
     color:white;
     background-color: green;
 }
+.about
+{
+    display: flex;
+    align: center;
+    gap: 2rem;
+    padding-top: 10rem;
+}
+.about .image
+{
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+}
+.about .content .box
+{
+    padding: 3rem;
+    background: #f5f5f5 ;
+}
+.about .content .box h2
+{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:#860111;
+}
+.about .content .box h3{
+    font-size: 2rem;
+    color: #e4007c;
+}
+.about .content .box h3:hover
+{
+    letter-spacing: 0.5rem;
+    color:#04AA6D;
+}
+.about .content .box p
+{
+    font-size: 1.5rem;
+    line-height: 2.5;
+    color: black;
+}
 .si
 {
     display: inline-block;
@@ -216,25 +183,6 @@ body{
 .si:hover
 {
     letter-spacing: 0.1rem;
-}
-.buy
-{
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    color:#00008b;
-    border: 2px solid #00008b;
-    font-size: 1.7rem ;
-    box-shadow: 0 0.5rem 1rem #00008b;
-    cursor: pointer;
-    border-radius: 20px;
-
-}
-.buy:hover
-{
-    letter-spacing: 0.2rem;
-    color:white;
-    background-color: green;
 }
 .footer{
     background: gainsboro;
