@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
 
     <section class="header">
@@ -21,17 +24,32 @@
   </section>
 </head>
 <body>
-  <section class="home" >
-    <div class="slide">
-        <div class="content">
-            <span>Beauty is the illumination of your soul</span>
-            <br>
-            <h3> Here is the variety of trendy beauty produts. Start your journey from here!
-            </h3>
-            <a href="/pages/shop.html" class="button">Shop Now !</a>
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1500">
+        <img src="/images/enddesign.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/images/seconddesign.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          
         </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img src="/images/thirddesign.png" class="d-block w-100" alt="...">
+       
+      </div>
+      
     </div>
-</section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 <br>
 <br>
 <div class="parent-container">
@@ -40,25 +58,26 @@
 <section class="category">
   <div class="boxcontainer">
 
-    <a href="#" class="box">
+    <a href="#b" class="box">
       <img src="/images/face.jpeg">
-      <h3>Face</h3>
+      
     </a>
+    
     <a href="#" class="box">
       <img src="/images/eye.jpeg">
-      <h3>Eye</h3>
+      
     </a>
     <a href="#" class="box">
       <img src="/images/lips.jpeg">
-      <h3>Lips</h3>
+      
     </a>
     <a href="#" class="box">
       <img src="/images/cheeks.jpeg">
-      <h3>Cheeks</h3>
+      
     </a>
     <a href="#" class="box">
       <img src="/images/brushes.jpeg">
-      <h3>Brushes</h3>
+     
     </a>
 
   </div>
@@ -721,6 +740,17 @@
 </div>
 </section>
 <br>
+
+
+
+
+
+
+
+
+
+
+
 <section class="footer">
   <div class="box-container">
     <div class="box">
@@ -751,5 +781,6 @@
   </div>
   <div class="credit">Classy&nbsp<span>Cosmetics&nbsp</span>|| All Rights Reserved!</div>
 </section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
