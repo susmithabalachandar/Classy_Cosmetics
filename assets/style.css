@@ -29,7 +29,7 @@ html::-webkit-scrollbar-thumb
 }
 section
 {
-    padding: 3rem 9%;
+    padding: 2rem 9%;
 }
 .heading
 {
@@ -127,36 +127,7 @@ body{
     position: relative;
     padding: 0;
   }
-  .home .slide
-  {
-
-        background: url(/images/homebg1.jpg) no-repeat;
-        background-size: cover; /* Change this value to adjust the size */
-        background-position: center;
-    
-    padding: 5rem;
-    display: flex;
-    min-height: 60vh;
-
-  }
-  .home .slide .content{
-    margin: 10px;
-    text-align: left;
-    padding-top: 10rem;
-  }
-.home .slide .content span{
-    color: black;
-    display: block;
-    font-size: 4rem;
-}
-.home .slide .content span:hover{
-    color:#fff;
-}
-.home .slide .content h3{
-    font-size: 2rem;
-    color: black ;
-
-}
+  
 .button
 {
     display: inline-block;
@@ -195,7 +166,7 @@ body{
 }
 .category .boxcontainer .box img
 {
-    height: 15rem;
+    height: 18rem;
     margin-bottom: 1rem;
 }
 .about
@@ -219,6 +190,23 @@ body{
     font-size: 3rem;
     font-weight: bolder;
     color:#860111;
+    animation: blink 2s linear infinite;
+}
+@keyframes blink
+{
+    0%
+    {
+        opacity: 0.1;
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
 }
 .about .content .box h3{
     font-size: 2rem;
@@ -534,26 +522,13 @@ span1
 
 
 
-@media screen and (max-width: 600px) {
-    
-    .home .slide .content span{
-        font-size: 2rem;
-        display:block;
-  }
-  .home .slide
-  {
-    padding: 2.5rem;
-    background-size:cover;
-    min-height: auto;
-  }.home .slide .content{
-    margin: 5px;
-    
-    padding-top: 5rem;
-  }
-  .home .slide .content h3{
-    font-size: 0.9rem;
-    
-  }
+@media screen and (max-width: 600px)
+{
+section
+{
+    padding: 0.1rem 3%;
+}
+
   .button
 {
     display: inline-block;
@@ -662,8 +637,22 @@ span1
 }
 .about .image
 {
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     padding-right: 5rem;
+}
+
+.about .content .box
+{
+    padding: 1rem;
+    background: #f5f5f5 ;
+}
+
+.shop .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
 }
 
 
